@@ -11,20 +11,13 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
     <link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
-    <style>
-        .nav-item1{
-            width: 300px;
-            position: relative;
-            bottom: 400px;
-        }
-    </style>
 </head>
 <body>
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
             <h1 class="brand-title"><a href="{% url "home" %}">LCY Blog</a></h1>
-            <h2 class="brand-tagline">逐梦人 - Fellow The Dream</h2>
+            <h2 class="brand-tagline">逐梦人 - Follow The Dream</h2>
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -43,8 +36,8 @@
                         <a class="button-success pure-button" href="/">专题</a>
                     </li>
                     <li>
-                        <form class="nav-item1" action="/search/" method="get">
-                            <input class="pure-input-3-3" type="text" name="s" placeholder="search" style="width: 300px;height: 25px;">
+                        <form class="pure-menu" action="/search/" method="get">
+                            <input class="pure-input-3-3" type="text" name="s" placeholder="search" >
                         </form>
                     </li>
                     <li class="nav-item">
