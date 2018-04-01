@@ -32,6 +32,13 @@ def search_tag(request, tag):
         raise Http404
     return render(request, 'tag.html', {'post_list': post_list})
 
+def search_date(request, date):
+    try:
+        post_list = Article.objects.filter(date_time__date=date)
+    except Article.DoesNotExist:
+        raise Http404
+    return render(request, 'date.html', {'post_list':post_list})
+
 def blog_search(request):
     if 's' in request.GET:
         s = request.GET['s']
